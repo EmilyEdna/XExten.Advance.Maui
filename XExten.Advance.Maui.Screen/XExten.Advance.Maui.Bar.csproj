@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net7.0;net7.0-android;</TargetFrameworks>
@@ -8,6 +8,18 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+		<Authors>EmilyEdna</Authors>
+
+		<Company>EmilyEdna</Company>
+
+		<Copyright>EmilyEdna</Copyright>
+
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+
+		<FileVersion>1.0.0</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

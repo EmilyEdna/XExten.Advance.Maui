@@ -1,12 +1,10 @@
-﻿using XExten.Advance.Maui.FileDown.Platforms.Android;
-
-namespace XExten.Advance.Maui.FileDown
+﻿namespace XExten.Advance.Maui.FileDown
 {
     public interface IDownFileManager
     {
 #if ANDROID
-        private static Lazy<IDownManager> Implementation = new Lazy<IDownManager>(()=>new DownManager(), LazyThreadSafetyMode.PublicationOnly);
-        public static IDownManager Current
+        private static Lazy<Platforms.Android.IDownManager> Implementation = new Lazy<Platforms.Android.IDownManager>(()=>new Platforms.Android.DownManager(), LazyThreadSafetyMode.PublicationOnly);
+        public static Platforms.Android.IDownManager Current
         {
             get
             {
